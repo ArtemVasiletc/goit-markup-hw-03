@@ -72,12 +72,13 @@ img {
 /* -------------------------------------------------HEADER----------------------------------------- */
 .header-container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+
   align-items: center;
 }
 header {
   border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-nav {
@@ -146,12 +147,12 @@ header {
 /* ----------------------------------------MAIN-INDEX.HTML-------------------------------------------- */
 .section-one {
   background-color: var(--navy-blue);
-}
-
-.section-one-container {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+}
+
+.section-one-container {
 }
 
 .section-one-title {
@@ -186,7 +187,7 @@ header {
   background-color: var(--ocean);
 }
 
-.section-two-container {
+.section-two {
   padding-top: 130px;
   padding-bottom: 120px;
 }
@@ -220,10 +221,6 @@ header {
   color: var(--slate);
 }
 
-.section-three-container {
-  padding-bottom: 120px;
-}
-
 .what-list {
   display: flex;
   gap: 24px;
@@ -232,8 +229,11 @@ header {
 .what-list-item {
 }
 
+.section-three {
+  padding-bottom: 120px;
+}
 .section-three-title {
-  margin-bottom: 112px;
+  margin-bottom: 72px;
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -252,12 +252,10 @@ header {
 
 .section-four {
   background-color: var(--cloud);
-}
-
-.section-four-container {
   padding-bottom: 120px;
   padding-top: 120px;
 }
+
 .section-four-title {
   margin-bottom: 72px;
   font-family: "Roboto", sans-serif;
@@ -278,6 +276,7 @@ header {
 
 .our-team-list-item {
   background-color: var(--white);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-image {
@@ -346,19 +345,11 @@ header {
 .project-cards-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 48px 24px;
 }
 
 .project-cards-list-item {
-  min-width: calc((100% - 48) / 3);
-  margin-right: 24px;
-  margin-bottom: 48px;
-}
-.project-cards-list-item:nth-of-type(3n) {
-  margin-right: 0;
-}
-
-.project-cards-list-item:nth-last-of-type(-n + 3) {
-  margin-bottom: 0;
+  flex-basis: calc((100% - 48px) / 3);
 }
 
 .card-desc-text {
@@ -387,8 +378,6 @@ header {
 /*-------------------------------------------FOOTER--------------------------------------------------- */
 .footer {
   background-color: var(--navy-blue);
-}
-.footer-container {
   padding-top: 100px;
   padding-bottom: 100px;
 }
