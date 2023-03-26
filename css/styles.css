@@ -353,7 +353,7 @@ header {
 }
 
 .card-desc-text {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -388,7 +388,6 @@ header {
   font-weight: 800;
   font-size: 18px;
   line-height: 1.17;
-  display: flex;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--iris);
@@ -396,9 +395,9 @@ header {
 
 .logo-footer-span {
   color: var(--cloud);
-  margin-bottom: 16px;
 }
 .footer-text {
+  margin-top: 16px;
   width: 264px;
   font-weight: 400;
   font-size: 16px;
